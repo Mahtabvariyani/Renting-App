@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="relative hero h-screen">
       <div className="hero__image relative h-full">
-        <video autoPlay muted loop={true} className="w-full h-full object-cover">
+      <video autoPlay muted loop playsInline className="w-full h-full object-cover">
           <source src="./video.mp4" type="video/mp4" />
         </video>
 
