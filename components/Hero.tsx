@@ -16,6 +16,14 @@ const Hero = () => {
           <p className="text-lg md:text-xl lg:text-2xl">Click here</p>
         </div>
       </div>
+      <div className="flex lg:hidden md:hidden sm:flex text-white">
+        <div className="  text-white  text-left pl-5">
+          <h1 className="hero__titlee whitespace-nowrap">"Quality Fleet"</h1>
+          <p>
+          When it comes to car rental services, the quality of the fleet is a pivotal factor. The term 'Quality Fleet' encompasses an elite selection of vehicles designed to meet various needs and preferences. A superior fleet offers a wide range of well-maintained, modern, and efficient vehicles suitable for different purposes, be it leisure, business, or specialized requirements.
+          </p>
+        </div>{" "}
+      </div>
     </div>
   );
 };

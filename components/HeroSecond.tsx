@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -10,26 +9,20 @@ const Hero = () => {
         </h1>
 
         <p className="hero__subtitle ">
-<strong>
-Streamline your car rental experience with our effortless booking
-
-</strong>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, provident.
-          process.
+          <strong>
+            Streamline your car rental experience with our effortless booking
+          </strong>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint,
+          provident. process.
         </p>
-
-    
       </div>
-    <div className="hero__image-container relative">
-  <div className="hero__image">
-    <video autoPlay muted loop className="w-full h-full object-cover">
-      <source src="./video2.mp4" type="video/mp4" />
-    </video>
-  </div>
-
-  <div className="hero__image-overlay absolute inset-0 bg-hero-bg bg-repeat-round -z-10" />
-</div>
-
+      <div className=" relative sm:hidden xs:hidden hidden xl:flex-[1.5] lg:flex  justify-end items-end w-full xl:h-screen">
+        <div className="hero__image">
+          <video autoPlay muted loop className="w-full h-full object-cover">
+            <source src="./video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
     </div>
   );
 };
