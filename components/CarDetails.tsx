@@ -38,10 +38,10 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => (
               leaveFrom='opacity-100 scale-100'
               leaveTo='opacity-0 scale-95'
             >
-              <Dialog.Panel className='relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-white p-6 text-left shadow-xl transition-all flex flex-col gap-5'>
+              <Dialog.Panel className='relative w-full max-w-lg max-h-[90vh] overflow-y-auto transform rounded-2xl bg-gray-800 text-white p-6 text-left shadow-xl transition-all flex flex-col gap-5'>
                 <button
                   type='button'
-                  className='absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100 rounded-full'
+                  className='absolute top-2 right-2 z-10 w-fit p-2 bg-primary-blue-100  rounded-full'
                   onClick={closeModal}
                 >
                   <Image
@@ -59,13 +59,13 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => (
                   </div>
 
                   <div className='flex gap-3'>
-                    <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                    <div className='flex-1 relative w-full h-24  rounded-lg'>
                       <Image src={generateCarImageUrl(car, "29")} alt='car model' fill priority className='object-contain' />
                     </div>
-                    <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                    <div className='flex-1 relative w-full h-24 rounded-lg'>
                       <Image src={generateCarImageUrl(car, "33")} alt='car model' fill priority className='object-contain' />
                     </div>
-                    <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
+                    <div className='flex-1 relative w-full h-24 rounded-lg'>
                       <Image  src={generateCarImageUrl(car, "13")} alt='car model' fill priority className='object-contain' />
                     </div>
                   </div>
@@ -82,7 +82,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => (
                         <h4 className='text-grey capitalize'>
                           {key.split("_").join(" ")}
                         </h4>
-                        <p className='text-black-100 font-semibold'>
+                        <p className='text-gray-100 font-semibold'>
                           {value}
                         </p>
                       </div>

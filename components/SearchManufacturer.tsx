@@ -23,7 +23,7 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
       <Combobox value={manufacturer} onChange={setManuFacturer}>
         <div className='relative w-full'>
           {/* Button for the combobox. Click on the icon to see the complete dropdown */}
-          <Combobox.Button className='absolute top-[14px]'>
+          <Combobox.Button className='absolute top-[14px] '>
             <Image
               src='/car-logo.svg'
               width={20}
@@ -35,7 +35,7 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
 
           {/* Input field for searching */}
           <Combobox.Input
-            className='search-manufacturer__input'
+            className='search-manufacturer__input '
             displayValue={(item: string) => item}
             onChange={(event) => setQuery(event.target.value)} // Update the search query when the input changes
             placeholder='Volkswagen...'
@@ -66,7 +66,7 @@ const SearchManufacturer = ({ manufacturer, setManuFacturer }: SearchManuFacture
                     key={item}
                     className={({ active }) =>
                       `relative search-manufacturer__option ${
-                        active ? "bg-primary-blue text-white" : "text-gray-900"
+                        active ? "bg-green-500 text-gray-800" : "text-gray-400"
                       }`
                     }
                     value={item}

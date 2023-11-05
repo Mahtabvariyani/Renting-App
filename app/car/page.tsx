@@ -17,7 +17,7 @@ export default async function Home({ searchParams }: HomeProps) {
   return (
     <main className='overflow-hidden'><HeroSecond/>
       <div className='mt-12 padding-x padding-y max-width' id='discover'>
-        <div className='home__text-container'>
+        <div className='home__text-container '>
           <h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
           <p>Explore out cars you might like</p>
         </div>
