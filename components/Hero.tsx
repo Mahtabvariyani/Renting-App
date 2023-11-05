@@ -1,42 +1,20 @@
-"use client";
-
-import Image from "next/image";
-
-import { CustomButton } from "@components";
+import Link from "next/link";
+import React from "react";
 
 const Hero = () => {
-  const handleScroll = () => {
-    const nextSection = document.getElementById("discover");
-
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <div className="hero">
-      <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title">
-          Find, book, rent a car—quick and super easy!
-        </h1>
+    <div className="relative hero h-screen">
+      <div className="hero__image relative h-full">
+        <video autoPlay muted loop className="w-full h-full object-cover">
+          <source src="./video.mp4" type="video/mp4" />
+        </video>
 
-        <p className="hero__subtitle">
-          Streamline your car rental experience with our effortless booking
-          process.
-        </p>
-
-        <CustomButton
-          title="Explore Cars"
-          containerStyles="bg-primary-blue text-white rounded-full mt-10"
-          handleClick={handleScroll}
-        />
-      </div>
-      <div className="hero__image-container">
-        <div className="hero__image">
-          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white text-center md:text-left">
+          <h1 className="hero__title">
+            <Link href="/car">Explore The Cars</Link>
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl">Click here</p>
         </div>
-
-        <div className="hero__image-overlay" />
       </div>
     </div>
   );
